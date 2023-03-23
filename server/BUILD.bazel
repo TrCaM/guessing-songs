@@ -12,6 +12,15 @@ py_binary(
     srcs = ["app.py"],
     deps = [
         ":app_lib",
-        requirement("Flask")
+        requirement("Flask"),
+        requirement("debugpy")
     ],
+)
+
+py_test(
+    name = "app_test",
+    srcs = ["app_test.py"],
+    deps = [
+        ":app"
+    ]
 )
