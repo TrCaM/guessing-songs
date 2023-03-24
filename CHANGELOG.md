@@ -1,5 +1,16 @@
 # Changelog
 
+## 2023-03-23
+
+**Accomplishments:**
+
+- Autocompletion with bazel: Need to use venv
+
+**Todos:**
+
+- Onboarding the project with docker
+- Host the project on AWS
+
 ## 2023-03-22
 
 **Accomplishments:**

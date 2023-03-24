@@ -6,6 +6,7 @@ WELCOME_HOME_TEXT = "This is the guessing song app!"
 
 # Uncomment to enable debugging
 # import debugpy; debugpy.listen(5724); debugpy.wait_for_client()
+# print("Please start debugging client from VSCODE")
 
 @app.route("/")
 def home():
