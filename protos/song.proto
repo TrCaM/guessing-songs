@@ -2,8 +2,19 @@ syntax = "proto3";
 
 package song;
 
+enum Gender {
+  MALE = 0;
+  FEMALE = 1;
+  OTHERS = 2;
+}
+
+message Artist {
+  string name = 1;
+  Gender gender = 2;
+}
+
 message Song {
   string name = 1;
-  repeated string lyrics_sample = 2;
-  repeated string artists = 3;
+  repeated string lyrics_samples = 2;
+  repeated Artist artists = 3;
 }
