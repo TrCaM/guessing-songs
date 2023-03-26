@@ -30,3 +30,5 @@ user.bazelrc
 # venc folder
 venv
 __pycache__
+# proto_out folder
+protos_out

@@ -12,8 +12,9 @@ py_binary(
     srcs = ["app.py"],
     deps = [
         ":app_lib",
+        "//protos:song_py_proto",
         requirement("Flask"),
-        requirement("debugpy")
+        requirement("debugpy"),
     ],
 )
 

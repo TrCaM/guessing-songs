@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package song;
+
+message Song {
+  string name = 1;
+  repeated string lyrics_sample = 2;
+  repeated string artists = 3;
+}

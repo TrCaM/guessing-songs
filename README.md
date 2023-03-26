@@ -70,4 +70,16 @@ python -m venv ./venv
 pip install -r requirements_lock.txt
 ```
 
+Install protoc
+
+```
+brew install protobuf
+```
+
+6. Run set up script
+
+```
+./setup.sh
+```
+
 Then in VSCode with Python extension enabled we should see auto-completion in code

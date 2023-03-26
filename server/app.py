@@ -1,4 +1,5 @@
 from flask import Flask
+from protos.song_pb2 import Song
 
 app = Flask(__name__)
 
@@ -10,7 +11,9 @@ WELCOME_HOME_TEXT = "This is the guessing song app!"
 
 @app.route("/")
 def home():
-  return "This is the guessing song app!"
+  song = Song()
+  song.name = "Hello"
+  return song.name
 
 if __name__ == '__main__':
   app.run()
